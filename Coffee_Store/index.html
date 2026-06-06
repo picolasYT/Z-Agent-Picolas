@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Store - Tu Cafetería Favorita</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-coffee"></i>
+                <h1>Coffee Store</h1>
+            </div>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Descubre el Sabor Perfecto</h2>
+                <p>Cafés de especialidad, hechos con amor y pasión</p>
+            </div>
+        </section>
+
+        <section class="menu-categories">
+            <div class="container">
+                <h3>Categorías</h3>
+                <div class="category-filters">
+                    <button class="category-btn active" data-category="all">Todos</button>
+                    <button class="category-btn" data-category="cafes">Cafés</button>
+                    <button class="category-btn" data-category="especiales">Especiales</button>
+                    <button class="category-btn" data-category="postres">Postres</button>
+                    <button class="category-btn" data-category="bebidas">Bebidas</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu">
+            <div class="container">
+                <h3>Nuestro Menú</h3>
+                <div class="menu-grid" id="menu-grid">
+                    <!-- Cafés -->
+                    <div class="menu-item" data-category="cafes">
+                        <div class="item-image">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <div class="item-info">
+                            <h4>Café Americano</h4>
+                            <p class="item-description">Café espresso suavizado con agua caliente</p>
+                            <div class="item-footer">
+                                <span class="item-price">$2.50</span>
+                                <button class="add-to-cart" data-id="1" data-name="Café Americano" data-price="2.50">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="cafes">
+                        <div class="item-image">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <div class="item-info">
+                            <h4>Café Expreso</h4>
+                            <p class="item-description">Café intenso y concentrado</p>
+                            <div class="item-footer">
+                                <span class="item-price">$2.00</span>
+                                <button class="add-to-cart" data-id="2" data-name="Café Expreso" data-price="2.00">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="cafes">
+                        <div class="item-image">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <div class="item-info">
+                            <h4>Café con Leche</h4>
+                            <p class="item-description">Perfecta combinación de café y leche</p>
+                            <div class="item-footer">
+                                <span class="item-price">$3.00</span>
+                                <button class="add-to-cart" data-id="3" data-name="Café con Leche" data-price="3.00">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Especiales -->
+                    <div class="menu-item" data-category="especiales">
+                        <div class="item-image">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                        <div class="item-info">
+                            <h4>Cappuccino</h4>
+                            <p class="item-description">Café con leche espuma y cacao</p>
+                            <div class="item-footer">
+                                <span class="item-price">$3.50</span>
+                                <button class="add-to-cart" data-id="4" data-name="Cappuccino" data-price="3.50">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="especiales">
+                        <div class="item-image">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                        <div class="item-info">
+                            <h4>Latte</h4>
+                            <p class="item-description">Café con leche vaporizada y espuma</p>
+                            <div class="item-footer">
+                                <span class="item-price">$4.00</span>
+                                <button class="add-to-cart" data-id="5" data-name="Latte" data-price="4.00">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="especiales">
+                        <div class="item-image">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                        <div class="item-info">
+                            <h4>Mocha</h4>
+                            <p class="item-description">Café con chocolate y leche</p>
+                            <div class="item-footer">
+                                <span class="item-price">$4.50</span>
+                                <button class="add-to-cart" data-id="6" data-name="Mocha" data-price="4.50">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Postres -->
+                    <div class="menu-item" data-category="postres">
+                        <div class="item-image">
+                            <i class="fas fa-cookie-bite"></i>
+                        </div>
+                        <div class="item-info">
+                            <h4>Croissant</h4>
+                            <p class="item-description">Croissant de mantequilla recién horneado</p>
+                            <div class="item-footer">
+                                <span class="item-price">$2.50</span>
+                                <button class="add-to-cart" data-id="7" data-name="Croissant" data-price="2.50">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="postres">
+                        <div class="item-image">
+                            <i class="fas fa-ice-cream"></i>
+                        </div>
+                        <div class="item-info">
+                            <h4>Cheesecake</h4>
+                            <p class="item-description">Cheesecake de frutos rojos</p>
+                            <div class="item-footer">
+                                <span class="item-price">$5.00</span>
+                                <button class="add-to-cart" data-id="8" data-name="Cheesecake" data-price="5.00">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="postres">
+                        <div class="item-image">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <div class="item-info">
+                            <h4>Tarta de Chocolate</h4>
+                            <p class="item-description">Tarta de chocolate con ganache</p>
+                            <div class="item-footer">
+                                <span class="item-price">$4.50</span>
+                                <button class="add-to-cart" data-id="9" data-name="Tarta de Chocolate" data-price="4.50">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bebidas -->
+                    <div class="menu-item" data-category="bebidas">
+                        <div class="item-image">
+                            <i class="fas fa-glass-water"></i>
+                        </div>
+                        <div class="item-info">
+                            <h4>Jugo de Naranja</h4>
+                            <p class="item-description">Jugo natural de naranja recién exprimido</p>
+                            <div class="item-footer">
+                                <span class="item-price">$3.00</span>
+                                <button class="add-to-cart" data-id="10" data-name="Jugo de Naranja" data-price="3.00">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="bebidas">
+                        <div class="item-image">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                        <div class="item-info">
+                            <h4>Té de Hierbas</h4>
+                            <p class="item-description">Té de manzanilla con miel</p>
+                            <div class="item-footer">
+                                <span class="item-price">$2.50</span>
+                                <button class="add-to-cart" data-id="11" data-name="Té de Hierbas" data-price="2.50">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="bebidas">
+                        <div class="item-image">
+                            <i class="fas fa-glass-water"></i>
+                        </div>
+                        <div class="item-info">
+                            <h4>Agua Mineral</h4>
+                            <p class="item-description">Agua mineral natural</p>
+                            <div class="item-footer">
+                                <span class="item-price">$1.50</span>
+                                <button class="add-to-cart" data-id="12" data-name="Agua Mineral" data-price="1.50">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart-container">
+            <div class="cart-header">
+                <h3>Tu Carrito</h3>
+                <button class="close-cart" id="close-cart">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="cart-items" id="cart-items">
+                <!-- Los items del carrito se agregarán aquí dinámicamente -->
+            </div>
+            
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cart-total">$0.00</span>
+                </div>
+                <button class="checkout-btn" id="checkout-btn">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Coffee Store. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
