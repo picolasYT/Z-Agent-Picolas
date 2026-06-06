@@ -7,11 +7,12 @@ Agente de terminal para desarrollo de software. Similar a Claude Code / Codex.
 
 | Modelo | Cuándo se usa |
 |--------|--------------|
-| 🧠 DeepSeek R1-0528 (671B) | Debug profundo, arquitectura, refactor, "analizá", "cómo funciona" |
-| 💻 Qwen3 Coder (1M ctx) | Crear features, APIs, componentes, código nuevo de mediana complejidad |
-| ⚡ DeepSeek V4 Flash (284B) | Snippets rápidos, ejemplos simples, preguntas de código cortas |
-| 🌐 Llama 3.3 70B | Preguntas generales, explicaciones, charla sin código |
-| 🔀 openrouter/auto | Fallback automático si alguno falla |
+├─────────────────────────────────────────────────────────────
+│ 🌬️ Principal     → GLM 4.5 Air Free                        │
+│ 💻 Fallback      → Qwen3 Coder Free                        │
+│ ⚡ Opcional      → DeepSeek V4 Flash                       │
+│ 🔀 Último        → OpenRouter Auto                         │
+╰────────────────────────────────────────────────────────────╯
 
 ## Setup
 
