@@ -251,7 +251,7 @@ async function callOpenRouter(messages, modelId) {
     headers: {
       authorization:  `Bearer ${key}`,
       "content-type": "application/json",
-      "http-referer": "https://github.com/picolas/z-agent",
+      "http-referer": "https://github.com/picolasYT/Z-Agent-Picolas",
       "x-title":      "Z Agent by Picolas",
     },
     body: JSON.stringify({
