@@ -1,15 +1,15 @@
 {
   "name": "z-agent-picolas",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "Agente AI de terminal estilo Claude Code/OpenClaw",
   "type": "module",
-  "main": "src/index.js",
+  "main": "index.js",
   "bin": {
-    "z-agent": "./src/index.js",
-    "z-agent-picolas": "./src/index.js"
+    "z-agent": "index.js",
+    "z-agent-picolas": "index.js"
   },
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node index.js"
   },
   "keywords": [
     "ai",
@@ -19,13 +19,5 @@
     "picolas"
   ],
   "author": "picolasYT",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/picolasYT/Z-Agent-Picolas.git"
-  },
-  "bugs": {
-    "url": "https://github.com/picolasYT/Z-Agent-Picolas/issues"
-  },
-  "homepage": "https://github.com/picolasYT/Z-Agent-Picolas#readme"
+  "license": "MIT"
 }

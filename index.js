@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 /**
  * Z Agent by Picolas - v4.4 FIX ESTABLE
  * OpenRouter con fallback múltiple + filtro de actions inválidas.
