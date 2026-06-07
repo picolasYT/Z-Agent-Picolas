@@ -1,0 +1,34 @@
+[
+  {
+    "role": "user",
+    "content": "hola"
+  },
+  {
+    "role": "assistant",
+    "content": "Tuve un error al contactar la API. Revisá tu conexión, la API key o los límites de OpenRouter."
+  },
+  {
+    "role": "user",
+    "content": "hola"
+  },
+  {
+    "role": "assistant",
+    "content": "¡Hola! Soy Sos Z Agent, tu agente de terminal para desarrollo de software. Estoy listo para ayudarte con lo que necesites: crear proyectos, arreglar bugs, refactorizar, configurar entornos, o lo que se te ocurra. ¿Qué tarea vamos a resolver hoy?"
+  },
+  {
+    "role": "user",
+    "content": "hola presentante"
+  },
+  {
+    "role": "assistant",
+    "content": "Hola! Soy Sos Z Agent, un agente de terminal para desarrollo de software creado por Picolas. Estoy aquí para ayudarte con tus proyectos de programación, ya sea creando código nuevo, depurando errores, refactorizando o cualquier otra tarea de desarrollo que necesites. ¿En qué puedo ayudarte hoy?"
+  },
+  {
+    "role": "user",
+    "content": "que puedes hacer"
+  },
+  {
+    "role": "assistant",
+    "content": "Como Sos Z Agent, puedo ayudarte con diversas tareas de desarrollo de software: crear y editar archivos, gestionar proyectos, ejecutar comandos de terminal, trabajar con repositorios Git, buscar información en la web, y mucho más. Puedo escribir código, depurar errores, refactorizar, configurar entornos, instalar dependencias y asistir en cualquier fase del ciclo de desarrollo de software. Estoy diseñado para ser un asistente completo en tu terminal, similar a Claude Code u OpenCode."
+  }
+]

@@ -1,12 +1,31 @@
 {
-  "name": "z-agent-by-picolas",
-  "version": "4.0.0",
-  "description": "Z Agent by Picolas — terminal AI coding agent. Solo OpenRouter, selección automática de modelo.",
-  "main": "index.js",
-  "type": "commonjs",
-  "scripts": { "start": "node index.js" },
-  "keywords": ["ai-agent","coding-agent","openrouter","qwen","deepseek","terminal"],
-  "author": "Picolas",
+  "name": "z-agent-picolas",
+  "version": "4.1.0",
+  "description": "Agente AI de terminal estilo Claude Code/OpenClaw",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "z-agent": "./src/index.js",
+    "z-agent-picolas": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "cli",
+    "terminal",
+    "picolas"
+  ],
+  "author": "picolasYT",
   "license": "MIT",
-  "engines": { "node": ">=18" }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/picolasYT/Z-Agent-Picolas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/picolasYT/Z-Agent-Picolas/issues"
+  },
+  "homepage": "https://github.com/picolasYT/Z-Agent-Picolas#readme"
 }
